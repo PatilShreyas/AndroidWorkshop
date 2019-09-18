@@ -1,0 +1,8 @@
+Java JDK Link:
+https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+
+Android Studio Link: 
+https://developer.android.com/studio
+
+Sample Projects:
+https://github.com/android
