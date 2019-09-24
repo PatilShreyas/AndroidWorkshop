@@ -10,8 +10,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    private int x;
-    private int y;
+    int x = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +23,17 @@ public class MainActivity extends AppCompatActivity {
         btnChangePic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                image.setImageResource(R.drawable.gdgx);
+                if (x == 0) {
+                    image.setImageResource(R.drawable.gdgx);
+                    x = 1;
+                } else {
+                    image.setImageResource(R.drawable.google);
+                    x = 0;
+                }
+
+                Toast.makeText(getApplicationContext(),
+                        "Image Changed!",
+                        Toast.LENGTH_SHORT).show();
             }
         });
     }
