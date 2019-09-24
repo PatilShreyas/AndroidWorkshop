@@ -1,0 +1,15 @@
+** Show Toast Syntax **
+Toast.makeText(this, "Text Here", Toast.LENGTH_SHORT).show();
+
+** Button Link from Design **
+Button b = findViewById(R.id.buttonId);
+
+** Button Click **
+b.setOnClickListener(new View.OnClickListener() {
+	public void onClick(View v) {
+		// Do something...
+	}
+});
+
+** Change Image **
+image.setImageResource(R.drawable.drawableResId);
